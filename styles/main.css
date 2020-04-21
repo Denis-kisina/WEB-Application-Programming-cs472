@@ -6,7 +6,7 @@ body {
     padding: 0;
     border: 0;
     margin: 0;
-
+    font-size: 2vw;
 }
 nav {
         box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
