@@ -11,3 +11,12 @@ a img {
     width: 7%;
     height: auto;
 }
+
+#footer {
+    background-color: transparent;
+    margin-top: -0.5em;
+    padding: 2em;
+    position: absolute;
+    text-align:center;
+    width: 100%;
+}
