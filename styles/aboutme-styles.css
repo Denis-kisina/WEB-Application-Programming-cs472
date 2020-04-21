@@ -1,0 +1,6 @@
+.header-title {
+  font-size: 4vh;
+}
+.header-title div > p {
+    font-size: 2vh;
+}
