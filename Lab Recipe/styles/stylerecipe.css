@@ -1,0 +1,24 @@
+h2 {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    text-decoration: underline;
+}
+header > h2 {
+    text-align: center;
+]}
+blockquote {
+    background-color: #FFFFA8;
+}
+a img {
+    width: 7%;
+    height: auto;
+}
+footer {
+    text-align: right;
+}
+hr {
+    color: #B3B3B3;
+}
+.linkvalidator {
+    color: #A4A400;
+}
