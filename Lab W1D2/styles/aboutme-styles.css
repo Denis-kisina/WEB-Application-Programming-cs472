@@ -6,7 +6,11 @@ h2 {
  }
  ol a {
     color: red;
+    text-decoration: none;
  ]}
+ ol a:hover {
+     text-decoration: underline;
+ }
 .main {
   margin-left: 28px;
 }
