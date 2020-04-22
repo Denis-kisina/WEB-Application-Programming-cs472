@@ -1,8 +1,11 @@
+body {
+
+}
 h1 {
-    color: blue;
+    color: #9EC3F7;
 }
 h2 {
-      color: blue;
+      color: #9EC3F7;
  }
  ol a {
     color: red;
@@ -11,14 +14,22 @@ h2 {
  ol a:hover {
      text-decoration: underline;
  }
-.main {
+#main {
   margin-left: 28px;
+  background-color: #595647;
+  color: white;
+}
+#main .container {
+     background-color: #595647;
 }
 .header-title {
   font-size: 4vh;
 }
 .header-title div > p {
-    font-size: 2vh;
+    font-size: 4vh;
+}
+.header-title div>p strong {
+    color: #EEED83;
 }
 .mooddiv {
     display: inline-flex;
