@@ -1,13 +1,14 @@
-h2 {
+h1 {
     color: #A4A400;
     background-color: #F0F0F0;
     text-decoration: underline;
 }
-header > h2 {
+header > h1 {
     text-align: center;
 ]}
 blockquote {
     background-color: #FFFFA8;
+    width: 63%;
 }
 a img {
     width: 7%;
@@ -20,5 +21,15 @@ hr {
     color: #B3B3B3;
 }
 .linkvalidator {
+    color: #A4A400;
+}
+.b {
+    list-style: none;
+    padding-left: 0;
+}
+.spanunderline span{
+    text-decoration: underline;
+}
+.a {
     color: #A4A400;
 }
