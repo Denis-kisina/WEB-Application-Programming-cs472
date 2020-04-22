@@ -1,6 +1,23 @@
+h1 {
+    color: blue;
+}
+h2 {
+      color: blue;
+ }
+.main {
+  margin-left: 28px;
+}
 .header-title {
   font-size: 4vh;
 }
 .header-title div > p {
     font-size: 2vh;
+}
+.mooddiv {
+    display: inline-flex;
+    align-items: baseline;
+}
+.mooddiv img {
+    width: 30%;
+    height: auto;
 }
