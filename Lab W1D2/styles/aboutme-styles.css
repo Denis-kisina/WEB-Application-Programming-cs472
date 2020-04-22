@@ -4,6 +4,9 @@ h1 {
 h2 {
       color: blue;
  }
+ ol a {
+    color: red;
+ ]}
 .main {
   margin-left: 28px;
 }
