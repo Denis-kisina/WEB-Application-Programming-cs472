@@ -3,9 +3,9 @@ h1 {
     background-color: #F0F0F0;
     text-decoration: underline;
 }
-header > h1 {
+header>h1 {
     text-align: center;
-]}
+}
 blockquote {
     background-color: #FFFFA8;
     width: 63%;
