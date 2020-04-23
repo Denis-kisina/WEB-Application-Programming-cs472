@@ -18,7 +18,15 @@ aside {
     float: right;
     width: 250px;
     position: relative;
+    background-color: #A2B964;
+    border-radius: 0 14px 0 0;
 }
+
+aside dl {
+    margin-bottom: 0px;
+    margin-top: 26px;
+}
+
 
 h1 {
     font-size: 24pt;
@@ -39,6 +47,14 @@ h1 {
     font-size: 48px;
     color: red;
     font-weight: bold;
+    /*border-radius: 16px 0px 0px 0;*/
+}
+.head_div>img {
+    border-radius: 16px 0px 0px 0;
+    vertical-align: middle;
+}
+aside img {
+    border-radius: 0 14px 0 0;
 }
 .overall {
     border-radius: 20px;
@@ -61,4 +77,46 @@ h1 {
 
 .review_columns {
     columns: 2;
+    column-gap: 2%;
+}
+.overview_div {
+
+}
+
+.a {
+    border-radius: 10px;
+    border: 2px solid gray;
+    font-size: 8pt;
+    background-color: #E8DC9B;
+
+}
+
+.a img {
+    float: left;
+    margin: 5px;
+}
+.b {
+    margin: 8px;
+}
+.bottom_verify {
+    position: fixed;
+    /* float: right; */
+    bottom: 0;
+    /* margin: auto; */
+    /* text-align: right; */
+    margin-left: 93%;
+}
+.footer_div {
+    background-color: #A2B964;
+    width: 800px;
+    height: 29px;
+    margin-top: 4px;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+
+.footer_div p {
+    background-color: #A2B964;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
