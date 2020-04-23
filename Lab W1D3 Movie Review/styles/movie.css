@@ -47,7 +47,7 @@ h1 {
     font-size: 48px;
     color: red;
     font-weight: bold;
-    /*border-radius: 16px 0px 0px 0;*/
+    border-radius: 14px 0px 0px 0;
 }
 .head_div>img {
     border-radius: 16px 0px 0px 0;
