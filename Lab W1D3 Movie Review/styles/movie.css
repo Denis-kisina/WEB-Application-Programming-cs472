@@ -80,7 +80,10 @@ aside img {
     column-gap: 2%;
 }
 .overview_div {
-
+    margin: 12px;
+}
+.overview_div dt {
+    font-weight: bold;
 }
 
 .a {
@@ -110,9 +113,10 @@ aside img {
     background-color: #A2B964;
     width: 800px;
     height: 29px;
-    margin-top: 4px;
+    margin-top: 35px;;
     border-bottom-right-radius: 14px;
     border-bottom-left-radius: 14px;
+    text-align: center;
 }
 
 .footer_div p {
