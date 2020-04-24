@@ -49,18 +49,18 @@
                     <div class="form-group">
                         <label for="productNumber">Product Number</label>
                         <input class="form-control form-control-lg" type="text" id="productNumber" name="productNumber"
-                               pattern="\d+">
+                               pattern="\d+" onfocus="this.value=''"/>
                     </div>
 
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input class="form-control form-control-lg" type="text" id="name" name="name" pattern="\D+">
+                        <input class="form-control form-control-lg" type="text" id="name" name="name" pattern="\D+" onfocus="this.value=''" />
                     </div>
 
                     <div class="form-group">
                         <label for="price">Unit Price</label>
                         <input class="form-control form-control-lg" type="text" id="price" name="price"
-                               pattern="^[-+]?[0-9]*\.?[0-9]+$" value="0.0">
+                               pattern="^[-+]?[0-9]*\.?[0-9]+$" value="0.0" onfocus="this.value=''"/>
                     </div>
 
                     <!--                </form>-->
@@ -70,7 +70,7 @@
                     <div class="form-group">
                         <label for="quantity" class="control-label">Quantity in Stock</label>
                         <input class="form-control form-control-lg" type="text" id="quantity" name="quantity"
-                               pattern="\d+" value="0">
+                               pattern="\d+" value="0" onfocus="this.value=''" />
                     </div>
 
                     <div class="form-group">
@@ -97,11 +97,11 @@
                     <!--                </form>-->
                 </div>
             </div>
-            <div class="row">
-                <div class="col-8 form-group"></div>
-                <div class="col-4">
-                    <input class="btn btn-outline-dark btn-lg" type="reset" value="Reset">
-                    <input class="btn btn-outline-danger btn-lg" type="button" value="Cancel">
+            <div class="row float-right">
+<!--                <div class="col-6 form-group"></div>-->
+                <div class="col">
+                    <input class="btn btn-outline-dark btn-lg mr-3" type="reset" value="Reset">
+                    <input class="btn btn-outline-danger btn-lg mr-3 " type="button" value="Cancel">
                     <input class="btn btn-outline-primary btn-lg" type="submit" value="Add Product">
                 </div>
             </div>

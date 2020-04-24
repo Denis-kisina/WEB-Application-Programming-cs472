@@ -39,25 +39,34 @@
 
         <form method="get" action="#">
 
-            <div class="row">
+            <div class="row mt-5">
 <!--                <div class="col-12 form-group"></div>-->
-                <div class="col-12 form-group">
+                <div class="col-12 form-group ">
                     <div class="form-group">
-                        <label for="productNumber">Product Number</label>
-                        <input class="form-control form-control-lg" type="text" id="productNumber" name="productNumber"
-                               pattern="\d+">
+                        <label for="url">URL address</label>
+                        <input class="form-control form-control-lg" type="url" id="url" name="ul" placeholder="Enter URL"
+                               pattern="https?://.+" required onfocus="this.value=''" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input class="form-control form-control-lg" type="email" id="email" name="email" placeholder="Enter email"
+                               pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required onfocus="this.value=''" />
+                        <p class="text-secondary">We'll never share your email with anyone else.</p>
                     </div>
 
+                    <div class="form-group mt-3">
+                        <label for="password">Password</label>
+                        <input class="form-control form-control-lg" type="text" id="password" name="password" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{10,}$" required placeholder="Password" />
+                    </div>
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input class="form-control form-control-lg" type="text" id="name" name="name" pattern="\D+">
+                        <input  type="checkbox" value="Check me out" name="checkout" id="checkout"  /> Check me out
                     </div>
 
-                    <div class="form-group">
-                        <label for="price">Unit Price</label>
-                        <input class="form-control form-control-lg" type="text" id="price" name="price"
-                               pattern="^[-+]?[0-9]*\.?[0-9]+$" value="0.0">
-                    </div>
+<!--                    <div class="form-group">-->
+<!--                        <label for="price">Unit Price</label>-->
+<!--                        <input class="form-control form-control-lg" type="text" id="price" name="price"-->
+<!--                               pattern="^[-+]?[0-9]*\.?[0-9]+$" value="0.0">-->
+<!--                    </div>-->
                     <input class="btn btn-primary btn-lg" type="submit" value="Submit">
                 </div>
             </div>
