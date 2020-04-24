@@ -104,6 +104,7 @@ aside img {
 }
 .b {
     margin: 8px;
+    display: inline-block;
 }
 .bottom_verify {
     position: fixed;
