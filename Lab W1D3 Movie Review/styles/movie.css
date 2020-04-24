@@ -25,6 +25,7 @@ aside {
 aside dl {
     margin-bottom: 0px;
     margin-top: 26px;
+    display: inline-grid;
 }
 
 
@@ -85,6 +86,7 @@ aside img {
 }
 .overview_div {
     margin: 12px;
+    display: flex;
 }
 .overview_div dt {
     font-weight: bold;
