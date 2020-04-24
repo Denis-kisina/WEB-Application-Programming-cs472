@@ -45,7 +45,7 @@ h1 {
     display: inline-block;
 }
 .head_div {
-    display: grid;
+    display: flex;
     background-image: url("../images/rbg.png");
     background-repeat: repeat-x;
     font-size: 48px;
