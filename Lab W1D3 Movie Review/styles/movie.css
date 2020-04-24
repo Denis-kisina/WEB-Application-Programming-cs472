@@ -39,9 +39,13 @@ h1 {
     float: right;
     width: 550px;
     position: relative;
+    flex-direction: row;
 }
-
+.top {
+    display: inline-block;
+}
 .head_div {
+    display: grid;
     background-image: url("../images/rbg.png");
     background-repeat: repeat-x;
     font-size: 48px;
