@@ -32,3 +32,12 @@ legend {
     font-family: "Impact", fantasy;
 
 }
+
+footer {
+    background-color: transparent;
+    margin-top: -0.5em;
+    padding: 2em;
+    position: absolute;
+    text-align:center;
+    width: 100%;
+}
