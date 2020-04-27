@@ -33,7 +33,7 @@ window.onload = function () {
     // translatePigLatin("consonant");
     btn.onclick = translatePigLatin;
 
-    let btnMalkovitch = document.getElementById("MalkovitchID").onclick = findLongestWord;
+    document.getElementById("MalkovitchID").onclick = findLongestWord;
 };
 
 function translatePigLatin() {
