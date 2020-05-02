@@ -6,24 +6,26 @@
  */
 "use strict";
 $(document).ready(function () {
+
     $("#censusForm").submit(
         function (event) {
-            alert("working");
-            event.preventDefault();
-            const fullName = $("#fullName").value();
-            const citizenId = $("#citizenId").value();
-            const ssn = $("#ssn").value();
-            const state = $("#ddlState").value();
-            const senior = $("input[name='radioSeniorCitizen']:checked").value();
-            let newDataRow = `<tr><td>${citizenId}</td><td>${ssn}</td><td>${fullName}</td><td>${state}</td><td>${citizenId}</td><td>${senior}</td>`
-            $("#tbodyCitizenList").append(newDataRow);
-            $("#fullName").value("");
-            $("#citizenId").value("");
-            $("#ssn").value("");
-            $("#ddlState").value("");
-            $("#radioSeniorCitizenYes").prop("checked", false);
-            $("#radioSeniorCitizenNo").prop("checked", false);
-            $("#fullName").focus();
+
+                event.preventDefault();
+                const fullName = $("#fullName").val();
+                const citizenId = $("#citizenId").val();
+                const ssn = $("#ssn").val();
+                const state = $("#ddlState").val();
+                const senior = $("input[name='radioSeniorCitizen']:checked").val();
+                let newDataRow = `<tr><td>${citizenId}</td><td>${ssn}</td><td>${fullName}</td><td>${state}</td><td>${citizenId}</td><td>${senior}</td>`
+                // alert(`Form submitting .. ${newDataRow}`);
+                $("#tbodyCitizenList").append(newDataRow);
+                $("#fullName").val("");
+                $("#citizenId").val("");
+                $("#ssn").val("");
+                $("#ddlState").val("");
+                $("#radioSeniorCitizenYes").prop("checked", false);
+                $("#radioSeniorCitizenNo").prop("checked", false);
+                $("#fullName").focus();
         }
     );
 });
