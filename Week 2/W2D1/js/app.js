@@ -172,4 +172,4 @@ employeeModule.setAddress = function (newAddress) {
 };
 
 employeeModule.setAddress("fairfield");
-console.log(" Address: " + employee.getAddress());
+console.log(" Address: " + employeeModule.getAddress());
