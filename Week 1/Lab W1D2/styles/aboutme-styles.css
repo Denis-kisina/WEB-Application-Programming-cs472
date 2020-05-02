@@ -1,0 +1,41 @@
+body {
+
+}
+h1 {
+    color: #9EC3F7;
+}
+h2 {
+      color: #9EC3F7;
+ }
+ ol a {
+    color: red;
+    text-decoration: none;
+ ]}
+ ol a:hover {
+     text-decoration: underline;
+ }
+#main {
+  margin-left: 28px;
+  background-color: #595647;
+  color: white;
+}
+#main .container {
+     background-color: #595647;
+}
+.header-title {
+  font-size: 4vh;
+}
+.header-title div > p {
+    font-size: 4vh;
+}
+.header-title div>p strong {
+    color: #EEED83;
+}
+.mooddiv {
+    display: inline-flex;
+    align-items: baseline;
+}
+.mooddiv img {
+    width: 30%;
+    height: auto;
+}
