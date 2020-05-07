@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Lesson12.iml" filepath="$PROJECT_DIR$/Lesson12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Lesson13_JSPMVCDemo/Lesson13_JSPMVCDemo.iml" filepath="$PROJECT_DIR$/../Lesson13_JSPMVCDemo/Lesson13_JSPMVCDemo.iml" />
+    </modules>
+  </component>
+</project>

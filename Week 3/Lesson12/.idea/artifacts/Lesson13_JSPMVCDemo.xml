@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Lesson13_JSPMVCDemo">
+    <output-path>$PROJECT_DIR$/out/artifacts/Lesson13_JSPMVCDemo</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Lesson13_JSPMVCDemo/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Lesson13_JSPMVCDemo" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:1.2.7" />
+          <element id="library" level="project" name="jstl-1.2" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,12 +1,12 @@
-/*
+/**
 app.js
  */
 console.log(window);
 
-var someOnesName; // lexical environment: global envionment
+var someOnesName; // lexical environment: global environment
 
 function printName() {
-    var someonesName2 = "John"; // function-scoped variable. // lexial environment is printName function
+    var someonesName2 = "John"; // function-scoped variable. // lexical environment is printName function
     someOnesName = "Anna";
     console.log(someOnesName);
     if (true) {
@@ -16,6 +16,43 @@ function printName() {
     }
 
 }
+
+/**
+ * modules.js
+ */
+
+// Global environment/scope
+console.log(window);
+
+// Use IIFE
+const module = (function() { // Modules Pattern
+    let firstName = "Peter";
+
+    const getFirstName = function() {
+        return firstName;
+    }
+
+    const setFirstName = function(newName) {
+        firstName = newName;
+    }
+
+    console.log(firstName);
+    const sayHello = function () {
+        return "Hello " + firstName;
+    }
+    return {
+        sayHello: sayHello,
+        getName: getFirstName,
+        setName: setFirstName
+    }
+})();
+
+console.log(module.sayHello());
+module.setName("John");
+console.log(module.getName());
+console.log(module.sayHello());
+console.log(window.firstName);
+
 
 printName();
 // console.log(someOnesName2);
@@ -173,3 +210,5 @@ employeeModule.setAddress = function (newAddress) {
 
 employeeModule.setAddress("fairfield");
 console.log(" Address: " + employeeModule.getAddress());
+
+

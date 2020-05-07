@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="Lesson13_JSPMVCDemo:ear exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Lesson13_JSPMVCDemo_ear_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Lesson13_JSPMVCDemo/javaeeApplication/javaEEApplication" />
+    </root>
+  </artifact>
+</component>

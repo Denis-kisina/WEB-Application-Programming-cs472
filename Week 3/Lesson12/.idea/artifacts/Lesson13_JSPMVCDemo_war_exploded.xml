@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Lesson13_JSPMVCDemo:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Lesson13_JSPMVCDemo_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Lesson13_JSPMVCDemo/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Lesson13_JSPMVCDemo" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
