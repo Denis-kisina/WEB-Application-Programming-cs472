@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Week3W3D3-Assignment13-JavaServerPages">
+    <output-path>$PROJECT_DIR$/out/artifacts/Week3W3D3_Assignment13_JavaServerPages</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Week3W3D3-Assignment13-JavaServerPages/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Week3W3D3-Assignment13-JavaServerPages" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

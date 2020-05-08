@@ -4,6 +4,7 @@ import edu.miu.cs.cs472.lesson13jspmvc.model.ContactMessage;
 import edu.miu.cs.cs472.lesson13jspmvc.repository.ContactMessageRepository;
 
 import java.util.List;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class SearchedMessageService {
@@ -15,7 +16,8 @@ public class SearchedMessageService {
 
     public List<ContactMessage> searchContactMessage(String item) {
         return this.contactMessageRepository.getContactMessages().stream()
-                .filter(str -> str.getCategory().equalsIgnoreCase(item))
+        Pattern.matches()
+                .filter(str -> str.getCategory().matches(".*[a-zA-Z]*."))
                 .collect(Collectors.toList());
     }
 }
