@@ -11,30 +11,30 @@
 
     <h2>Customer Contact Form </h2>
     <% Object objErrMsg = request.getAttribute("errMsgName");
-     if (objErrMsg != null) {
-        String strErrMsg = (String) objErrMsg;
-        out.println(strErrMsg);
-    }%>
-<%--++++++++++++++++++++++++++++++++++++--%>
-<form method="post" action="${pageContext.request.contextPath}/contact-form">
-<%
+        if (objErrMsg != null) {
+            String strErrMsg = (String) objErrMsg;
+            out.println(strErrMsg);
+        }%>
+    <%--++++++++++++++++++++++++++++++++++++--%>
+    <form method="post" action="${pageContext.request.contextPath}/contact-form">
+            <%
 
     // read and write existing values
-    String customerName = request.getParameter("nameStrd");
-    String gender = request.getParameter("genderStrd");
-    String category = request.getParameter("categoryStrd");
-    String message = request.getParameter("messageStrd");
+    String customerName = request.getParameter("nameTextArea");
+    String gender = request.getParameter("gender");
+    String category = request.getParameter("category");
+    String message = request.getParameter("txtArea");
 
     out.print(" <div class='row mt-5'>");
     out.print(" <div class='col-12 form-group '>");
         out.print("  <div class='form-group'>");
             out.print("  <label for='nameId'>*Name:</label>");
             if(customerName != null){
-            if (customerName.equals("")){
-            out.print("<input autofocus class='form-control form-control-lg' type='text' id='nameId' name='nameTextArea' placeholder='e.g. John Smith' />");
-            }else {
-            out.print("<input autofocus class='form-control form-control-lg' type='text' id='nameId' name='nameTextArea' placeholder='e.g. John Smith' value='" +customerName+ "'/>");
-            }
+                if (customerName.equals("")){
+                out.print("<input autofocus class='form-control form-control-lg' type='text' id='nameId' name='nameTextArea' placeholder='e.g. John Smith' />");
+                }else {
+                out.print("<input autofocus class='form-control form-control-lg' type='text' id='nameId' name='nameTextArea' placeholder='e.g. John Smith' value='" +customerName+ "'/>");
+                }
             } else {
             out.print("<input autofocus class='form-control form-control-lg' type='text' id='nameId' name='nameTextArea' placeholder='e.g. John Smith' />");
             }
@@ -132,61 +132,60 @@
     out.print("</form>");
     out.print(" </div>");
     %>
-    
-    
 
-<%--    <form method="post" action="${pageContext.request.contextPath}/contact-form">--%>
-<%--        <div class="row mt-5">--%>
-<%--            <div class="col-12 form-group ">--%>
-<%--                <div class="form-group">--%>
-<%--                    <label for="nameId">*Name:</label>--%>
-<%--                    <%--%>
-<%--                        String customerName = request.getParameter("nameStrd");--%>
-<%--                        if (customerName != null) {--%>
-<%--                            if (customerName.equals("")) {--%>
-<%--                                out.print("<input autofocus class='form-control form-control-lg' type='text' id='nameId' name='nameTextArea' placeholder='e.g. John Smith' />");--%>
-<%--                            } else {--%>
-<%--                                out.print ("<input autofocus class='form-control form-control-lg' type='text' id='nameId' name='nameTextArea' placeholder='e.g. John Smith' value='" + customerName + "'/>");--%>
-<%--                            }--%>
-<%--                        } else {--%>
-<%--                            out.print("<input autofocus class='form-control form-control-lg' type='text' id='nameId' name='nameTextArea' placeholder='e.g. John Smith' />");--%>
-<%--                        }%>--%>
-<%--                    <input autofocus class="form-control form-control-lg" type="text" id="nameId" name="nameTextArea"--%>
-<%--                           placeholder="e.g. John Smith"/>--%>
 
-<%--                    <p class="text-secondary">Enter your full name.</p>--%>
-<%--                </div>--%>
-<%--                <div class="col-12 form-group">--%>
-<%--                    <label>*Gender: </label><br>--%>
-<%--                    <input type="checkbox" id="maleId" name="gender" value="male">--%>
-<%--                    <label for="maleId">Male</label>--%>
-<%--                    <input type="checkbox" id="femaleId" name="gender" value="female">--%>
-<%--                    <label for="femaleId">Female</label>--%>
-<%--                </div>--%>
-<%--                <div class="col-12 form-group">--%>
-<%--                    <label for="categoryId">*Category:</label>--%>
-<%--                    <select id="categoryId" class="form-control form-control-lg" name="category">--%>
+        <%--    <form method="post" action="${pageContext.request.contextPath}/contact-form">--%>
+        <%--        <div class="row mt-5">--%>
+        <%--            <div class="col-12 form-group ">--%>
+        <%--                <div class="form-group">--%>
+        <%--                    <label for="nameId">*Name:</label>--%>
+        <%--                    <%--%>
+        <%--                        String customerName = request.getParameter("nameStrd");--%>
+        <%--                        if (customerName != null) {--%>
+        <%--                            if (customerName.equals("")) {--%>
+        <%--                                out.print("<input autofocus class='form-control form-control-lg' type='text' id='nameId' name='nameTextArea' placeholder='e.g. John Smith' />");--%>
+        <%--                            } else {--%>
+        <%--                                out.print ("<input autofocus class='form-control form-control-lg' type='text' id='nameId' name='nameTextArea' placeholder='e.g. John Smith' value='" + customerName + "'/>");--%>
+        <%--                            }--%>
+        <%--                        } else {--%>
+        <%--                            out.print("<input autofocus class='form-control form-control-lg' type='text' id='nameId' name='nameTextArea' placeholder='e.g. John Smith' />");--%>
+        <%--                        }%>--%>
+        <%--                    <input autofocus class="form-control form-control-lg" type="text" id="nameId" name="nameTextArea"--%>
+        <%--                           placeholder="e.g. John Smith"/>--%>
 
-<%--                        <option value="null">Select...</option>--%>
-<%--                        <option value="feedback">Feedback</option>--%>
-<%--                        <option value="inquiry">Inquiry</option>--%>
-<%--                        <option value="complaint">Complaint</option>--%>
+        <%--                    <p class="text-secondary">Enter your full name.</p>--%>
+        <%--                </div>--%>
+        <%--                <div class="col-12 form-group">--%>
+        <%--                    <label>*Gender: </label><br>--%>
+        <%--                    <input type="checkbox" id="maleId" name="gender" value="male">--%>
+        <%--                    <label for="maleId">Male</label>--%>
+        <%--                    <input type="checkbox" id="femaleId" name="gender" value="female">--%>
+        <%--                    <label for="femaleId">Female</label>--%>
+        <%--                </div>--%>
+        <%--                <div class="col-12 form-group">--%>
+        <%--                    <label for="categoryId">*Category:</label>--%>
+        <%--                    <select id="categoryId" class="form-control form-control-lg" name="category">--%>
 
-<%--                    </select>--%>
-<%--                </div>--%>
-<%--                <div class="col-12 form-group">--%>
-<%--                    <label for="messageId">*Message:</label>--%>
-<%--                    <textarea class="form-control" id="messageId" rows="3" name="txtArea"></textarea>--%>
+        <%--                        <option value="null">Select...</option>--%>
+        <%--                        <option value="feedback">Feedback</option>--%>
+        <%--                        <option value="inquiry">Inquiry</option>--%>
+        <%--                        <option value="complaint">Complaint</option>--%>
 
-<%--                </div>--%>
-<%--                <div class="col-12 form-group">--%>
-<%--                    <input name="submit" class="col-12 btn btn-primary btn-lg" type="submit" value="Submit">--%>
-<%--                </div>--%>
+        <%--                    </select>--%>
+        <%--                </div>--%>
+        <%--                <div class="col-12 form-group">--%>
+        <%--                    <label for="messageId">*Message:</label>--%>
+        <%--                    <textarea class="form-control" id="messageId" rows="3" name="txtArea"></textarea>--%>
 
-<%--                <p>Hit Count for this page:</p>--%>
-<%--            </div>--%>
-<%--        </div>--%>
-<%--    </form>--%>
+        <%--                </div>--%>
+        <%--                <div class="col-12 form-group">--%>
+        <%--                    <input name="submit" class="col-12 btn btn-primary btn-lg" type="submit" value="Submit">--%>
+        <%--                </div>--%>
+
+        <%--                <p>Hit Count for this page:</p>--%>
+        <%--            </div>--%>
+        <%--        </div>--%>
+        <%--    </form>--%>
 </div>
 <%@include file="/WEB-INF/fragments/footer.jsp" %>
 </body>

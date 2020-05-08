@@ -45,6 +45,7 @@ public class ProcessContactFormDataServlet extends HttpServlet {
         }
         if(!missingFieldsMsg.equals("")){
             //
+
             request.setAttribute("errMsgName", missingFieldsMsg);
 
             // Store Data in fields in HttpSession
@@ -54,8 +55,8 @@ public class ProcessContactFormDataServlet extends HttpServlet {
             request.getSession(true).setAttribute("messageStrd", msgArea);
             // forward back to sender
 
-             response.sendRedirect("/WEB-INF/views/contact-form.jsp");
-//            request.getRequestDispatcher("/WEB-INF/views/contact-form.jsp").forward(request, response);
+//             response.sendRedirect("/WEB-INF/views/contact-form.jsp");
+            request.getRequestDispatcher("/WEB-INF/views/contact-form.jsp").forward(request, response);
         }
         else {
             //go thank you page
